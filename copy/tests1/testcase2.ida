@@ -1,0 +1,20 @@
+    #
+    # TEST CASE 2
+    # YOUR TEST CASE GOES HERE
+    #
+    AND $t1 $t1 $t2
+	AND $t2 $t3 -5
+
+	OR $t3 $t4 $t5
+	OR $t2 $t2 -3
+
+	REV $t1 $t2 $t3
+	REV $t1 $t1 -8
+
+	XOR $t1 $t1 $t2
+	XOR $t1 $t2 -1
+	JAL -200
+
+	LH  $t2 -4($t5)
+	LH  $t1 $t2($t3)
+

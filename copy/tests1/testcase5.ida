@@ -1,0 +1,15 @@
+    #
+    # TEST CASE 5
+    # YOUR TEST CASE GOES HERE
+    #
+	JLT $t4
+	JLT 100
+
+	JLE $t3
+	JLE 200
+REV $t1 $t1 -8
+	JNE $t2
+	JNE -100
+	
+	JAL $t1
+	JAL -200

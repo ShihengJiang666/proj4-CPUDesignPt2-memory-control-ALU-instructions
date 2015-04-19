@@ -1,0 +1,18 @@
+    #
+    # TEST CASE 1
+    # YOUR TEST CASE GOES HERE
+    #
+    
+	
+	SL $t1 $t2 $0	
+	SL $t3 $t4 5
+	JGT -6
+	SR $t1 $t2 $t3
+	SR $t2 $t3 3
+
+
+
+		
+
+
+

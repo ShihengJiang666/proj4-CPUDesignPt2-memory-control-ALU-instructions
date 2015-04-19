@@ -1,0 +1,30 @@
+    #
+    # TEST CASE 3
+    # YOUR TEST CASE GOES HERE
+    #
+
+
+	ADD $t0 $0 0
+	ADD $t1 $0 10
+	SW $t1 0($t0)
+	LW $t3 0($t1)
+	SW $t1 -1($t0)
+	
+	LW $t2 0($t0)	
+	LH $t2 -1($t0)
+	LW $t2 -1($t0)
+	LW $t2 3($t0)
+
+	ADD $jc $0 10
+
+start:
+	SUB $jc $jc 1
+	JGE @start
+
+	ADD $t0 $0 0xFFFF
+	DIV $t1 $t0 0
+
+	MUL $t0 $t0 0xFFFF
+
+
+	

@@ -1,0 +1,16 @@
+    #
+    # TEST CASE 3
+    # YOUR TEST CASE GOES HERE
+    #
+    
+	SUB $t1 $t1 $t2
+	SUB $t1 $t1 -6
+	
+	MUL	$t1 $t1 $t2
+	MUL $t1 $t1 -10
+
+	DIV	$t1 $t1 $t2
+	DIV $t1 $t1 -1
+	
+	SH  $t2 6($t5)
+	SH  $t1 $t2($t3)

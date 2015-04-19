@@ -1,0 +1,19 @@
+    #
+    # TEST CASE 5
+    # YOUR TEST CASE GOES HERE
+    #
+
+	
+
+
+	ADD $a1 $zero 10
+	JAL @func
+	j @exit
+
+
+func:
+	ADD $v0 $zero 1
+	J $ra
+
+exit:
+

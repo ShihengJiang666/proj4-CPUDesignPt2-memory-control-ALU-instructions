@@ -1,0 +1,79 @@
+    #
+    # TEST CASE 1
+    # YOUR TEST CASE GOES HERE
+    #
+	SUB $t1 $t1 $t2
+	SUB $t1 $t1 -6
+	
+	MUL	$t1 $t1 $t2
+	MUL $t1 $t1 -10
+
+	DIV	$t1 $t1 $t2
+	DIV $t1 $t1 -1
+	
+	SH  $t2 6($t5)
+	SH  $t1 $t2($t3)
+
+	
+    # shift left
+    ADD $t8 $0 13
+	SL $t8 $t8 3
+	ADD $t8 $0 26
+	ADD $t9 $0 2
+	SL $t8 $t8 $t9
+	
+    # shift right
+    SR $t3 $t3 -2
+	SR $t3 $t3 $t3
+	SR $t3 $t3 2
+	SR $t3 $t3 -32
+
+    # and
+	ADD $t3 $0 10
+	AND $t3 $t3 0
+	AND $t3 $t3 $t3
+
+
+    # inclusive or
+	ADD $t3 $0 10
+	OR $t3 $t3 $t3
+	OR $t3 $t3 0
+	
+    # reverse 
+	ADD $t0 $0 100
+	REV $t0 $t0 $t0
+	REV $t0 $t0 -3
+	ADD $t0 $0 10
+	REV $t0 $t0 3
+
+    # exclusive or
+	XOR $t6 $t6 0
+    XOR $t6 $t6 $t6
+
+    # add
+	ADD $t0 $0 33
+	ADD $t0 $t0 $t0
+    # subtract
+    SUB $t7 $t7 $t7
+	ADD $t0 $0 40
+	SUB $t0 $t0 -5
+
+	ADD $jc $0 10
+	start:
+		SUB $jc $jc 1
+		JGT @start
+
+    # multiply
+    MUL $t5 $t5 -1
+	MUL $t5 $t5 $t5
+    # divide
+    DIV $t1 $t1 0
+    DIV $t2 $t2 $t2
+	SUB $t2 $t2 23
+	DIV $t2 $t2 0
+    # set upper
+    STU $t4 $t4 4
+	STU $t4 $t4 $t4	
+	
+
+	

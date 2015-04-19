@@ -1,0 +1,18 @@
+    #
+    # TEST CASE 4
+    # YOUR TEST CASE GOES HERE
+    #	
+	LW  $t1 $t2($t3)
+	LW  $t3 -8($t6)
+
+	SW  $t1 $t2($t3)
+	SW  $t4 3($t2)
+	
+	STU $t1 $t2 $t3
+	STU $t1 $t2 -100
+
+	J $t2
+	J 5
+
+	JGT $t1
+	JGT -6

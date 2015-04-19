@@ -1,0 +1,12 @@
+    #
+    # TEST CASE 4
+    # YOUR TEST CASE GOES HERE
+    #
+
+
+
+
+	ADD $jc $0 10
+start:
+	SUB $jc $jc 1
+	JNE @start
